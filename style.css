@@ -1,0 +1,14 @@
+body {
+    background: radial-gradient(#969696,#4545ee);
+    font-size: 1.2em;
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    min-height: 50vh;
+}
+
+#songList {
+    background: lightcyan;
+    border-radius: 10px;
+}
