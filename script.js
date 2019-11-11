@@ -28,3 +28,16 @@ return list
 }
 
 document.getElementById("songList").appendChild(createSongList())
+
+songList.onclick = (e) => {
+    //console.log(e)
+    const clickedItem = e.target
+    const source = document.getElementById("source")
+    source.src = "./assets/songs/" + clickedItem.innerText
+    //console.log(clickedItem.innerText)
+
+document.getElementById("currentSong").innerText = 
+
+player.load()
+player.play()
+}
