@@ -36,7 +36,9 @@ songList.onclick = (e) => {
     source.src = "./assets/songs/" + clickedItem.innerText
     //console.log(clickedItem.innerText)
 
-document.getElementById("currentSong").innerText = 
+document.getElementById("currentlyPlayingSong").innerText = "Currently Playing: "
+
+document.getElementById("currentSong").innerText = clickedItem.innerText
 
 player.load()
 player.play()
