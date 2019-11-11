@@ -11,4 +11,24 @@ body {
 #songList {
     background: lightcyan;
     border-radius: 10px;
+    text-align: left;
+}
+
+li {
+    padding: 15px;
+}
+
+li:hover, svg:hover{
+    cursor: pointer;
+}
+
+#controls {
+    border: 1px lightgray solid;
+    border-radius: 10px;
+    background: lightcyan;
+    padding: 1.5em;
+}
+
+svg {
+    color: lightslategray;
 }
