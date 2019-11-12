@@ -1,11 +1,16 @@
 body {
-    background: radial-gradient(#969696,#4545ee);
+    background: radial-gradient(#1b0707,#df3c0f);
     font-size: 1.2em;
     width: 50%;
     margin: 20px auto;
     padding: 20px;
     text-align: center;
     min-height: 50vh;
+    
+}
+
+h4 {
+    color: white;
 }
 
 #songList {
@@ -31,4 +36,9 @@ li:hover, svg:hover{
 
 svg {
     color: lightslategray;
+}
+
+progress {
+    width: 80%;
+    margin: 10px;
 }

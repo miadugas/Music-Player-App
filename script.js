@@ -43,3 +43,35 @@ document.getElementById("currentSong").innerText = clickedItem.innerText
 player.load()
 player.play()
 }
+
+const playAudio = () =>{
+if(player.readyState) {
+    player.play()
+}
+}
+
+const pauseAudio =() => {
+    player.pause()
+}
+
+const slider = document.getElementById("volumeSlider")
+slider.oninput = (e) => {
+const volume = e.target.value
+player.volume = volume
+
+}
+
+const updateProgress = () => {
+    if(player.currentTime > 0){
+        const progressBar = document.getElementById("progress")
+
+        progressBar.value = (player.currentTime / player.duration) * 100
+
+    }
+
+
+// console.log(progressBar.value + "progress bar value")
+// console.log(player.currentTime + "current time")
+// console.log(player.duration + "duration")
+
+}
